@@ -376,6 +376,8 @@ class Wechat extends EventEmitter {
   syncPolling() {
     this._syncCheck().then(state => {
       if (state.retcode !== CONF.SYNCCHECK_RET_SUCCESS) {
+        // logout
+        this.stop();
         throw new Error('你登出了微信')
       } else {
         if (state.selector !== CONF.SYNCCHECK_SELECTOR_NORMAL) {
