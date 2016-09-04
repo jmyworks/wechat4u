@@ -13,7 +13,6 @@
     "test": "npm run lint && npm run unit"
   },
   "dependencies": {
-    "axios": "^0.11.1",
     "chai": "^3.5.0",
     "cookie-manager": "0.0.16",
     "debug": "^2.2.0",
@@ -21,7 +20,8 @@
     "mime": "^1.3.4",
     "mocha": "^2.4.5",
     "nock": "^8.0.0",
-    "replay": "^2.0.6"
+    "replay": "^2.0.6",
+    "superagent": "^2.2.0"
   },
   "repository": {
     "type": "git",
