@@ -34,8 +34,8 @@ class Wechat extends EventEmitter {
     }
 
     this[API] = {
-      jsLogin: 'https://login.weixin.qq.com/jslogin',
-      login: 'https://login.weixin.qq.com/cgi-bin/mmwebwx-bin/login'
+      jsLogin: 'https://login.wx.qq.com/jslogin',
+      login: 'https://login.wx.qq.com/cgi-bin/mmwebwx-bin/login'
     }
 
     this.syncErrorCount = 0
